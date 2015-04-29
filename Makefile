@@ -19,7 +19,7 @@ LFLAGS=
 
 # The final executable to produce.
 #	We're not making a library here or anything.
-EXEC=testpg
+EXEC=testmud
 
 # Objects which need to be compiled then eventually linked together.
 #OBJECTS=actor.cpp main.cpp
