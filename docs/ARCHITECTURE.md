@@ -53,6 +53,14 @@ Mixins
 C++ can do mixins via **multiple inheritance**. I'm going to call them
 mixins because the name makes sense to me.
 
+These classes should be inherited to add certain attributes to classes.
+They won't be used *everywhere*, since usually you'll be using something
+a little more sophisticated than a Talker, but they could be useful if
+you for example wanted a talking rock: you have a base class Rock, then
+inherit from Talker to make a TalkingRock! :)
+
+Classes which can be used as 'mixins' are '*-er*'s.
+
   * Mover
   * Talker
     * .say()
@@ -62,10 +70,9 @@ mixins because the name makes sense to me.
 Classes
 -------
 
-  * Computer
-  * Manny
-
-Inheriting from Talker.
+  * Talker:
+      * Computer
+      * Manny
 
   * .say()
     * Classes inheriting from Talker can have custom definitions of
