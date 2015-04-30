@@ -29,7 +29,7 @@ EXEC=testmud
 
 #${OBJECTS}:
 
-OBJECTS=main.o actor.o talker.o
+OBJECTS=main.o actor.o talker.o mover.o unique_id.o
 
 all: ${EXEC}
 
@@ -41,6 +41,12 @@ actor.o: actor.cpp actor.h
 
 main.o: main.cpp actor.h
 	${CC} ${CFLAGS} -c main.cpp
+
+mover.o: mover.cpp mover.h
+	${CC} ${CFLAGS} -c mover.cpp
+
+unique_id.o: unique_id.cpp unique_id.h
+	${CC} ${CFLAGS} -c unique_id.cpp
 
 ${EXEC}: ${OBJECTS}
 	${CC} ${CFLAGS} ${OBJECTS} -o ${EXEC} ${LFLAGS}
