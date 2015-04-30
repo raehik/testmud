@@ -7,7 +7,7 @@ Actor::Actor(std::string name) {
 
 
 // private
-UniqueID Actor::getNewID() {
+ID Actor::getNewID() {
     // TODO
     // found by random die roll.
     // guaranteed to be random.
