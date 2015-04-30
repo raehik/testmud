@@ -11,11 +11,11 @@ class Actor {
     public:
         Actor(std::string name);
 
-        ID _id;
+        ActorID _id;
         std::string _name;
 
     private:
-        UniqueID getNewID();
+        ActorID getNewID();
 };
 
 #endif // ACTOR_H_INCLUDED
