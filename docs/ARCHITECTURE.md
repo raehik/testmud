@@ -70,6 +70,10 @@ Classes which can be used as 'mixins' are '*-er*'s.
 Classes
 -------
 
+  * Position
+
+Stores an AreaID along with x-, y- and z-coordinates.
+
   * Talker:
       * Computer
       * Manny
@@ -78,10 +82,6 @@ Classes
     * Classes inheriting from Talker can have custom definitions of
       say() which might play a different sound effect or scroll
       faster/slower/completely differently.
-
-
-Classes
--------
 
   * TalkingColour
     * .Lore
