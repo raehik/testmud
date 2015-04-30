@@ -1,8 +1,8 @@
-#include <string>
-#include "actor.h"
-
 #ifndef TALKER_H_INCLUDED
 #define TALKER_H_INCLUDED
+
+#include <string>
+#include "actor.h"
 
 class Talker : public Actor {
     public:
