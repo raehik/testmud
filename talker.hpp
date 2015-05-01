@@ -1,8 +1,8 @@
-#ifndef TALKER_H_INCLUDED
-#define TALKER_H_INCLUDED
+#ifndef TALKER_HPP_INCLUDED
+#define TALKER_HPP_INCLUDED
 
 #include <string>
-#include "actor.h"
+#include "actor.hpp"
 
 class Talker : public Actor {
     public:
@@ -15,4 +15,4 @@ class Talker : public Actor {
         void print_final_char(char c);
 };
 
-#endif // TALKER_H_INCLUDED
+#endif // TALKER_HPP_INCLUDED

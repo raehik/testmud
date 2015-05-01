@@ -1,4 +1,4 @@
-#include "actor.h"
+#include "actor.hpp"
 
 Actor::Actor(std::string name) {
     _id = getNewID();
@@ -7,7 +7,7 @@ Actor::Actor(std::string name) {
 
 
 // private
-ID Actor::getNewID() {
+ActorID Actor::getNewID() {
     // TODO
     // found by random die roll.
     // guaranteed to be random.

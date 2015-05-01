@@ -1,8 +1,8 @@
-#ifndef ACTOR_H_INCLUDED
-#define ACTOR_H_INCLUDED
+#ifndef ACTOR_HPP_INCLUDED
+#define ACTOR_HPP_INCLUDED
 
 #include <string>
-#include "id.h"
+#include "actor_id.hpp"
 
 // This is a base class which should NOT be instantiated alone. You
 // should use another class which inherits from this class.
@@ -18,4 +18,4 @@ class Actor {
         ActorID getNewID();
 };
 
-#endif // ACTOR_H_INCLUDED
+#endif // ACTOR_HPP_INCLUDED
