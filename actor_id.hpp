@@ -1,6 +1,3 @@
-#ifndef ACTOR_ID_HPP_INCLUDED
-#define ACTOR_ID_HPP_INCLUDED
+#pragma once
 
 typedef int ActorID;
-
-#endif // ACTOR_ID_HPP_INCLUDED

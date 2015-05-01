@@ -1,5 +1,4 @@
-#ifndef TALKER_HPP_INCLUDED
-#define TALKER_HPP_INCLUDED
+#pragma once
 
 #include <string>
 #include "actor.hpp"
@@ -14,5 +13,3 @@ class Talker : public Actor {
         void print_char(char c);
         void print_final_char(char c);
 };
-
-#endif // TALKER_HPP_INCLUDED

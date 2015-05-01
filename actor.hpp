@@ -1,5 +1,4 @@
-#ifndef ACTOR_HPP_INCLUDED
-#define ACTOR_HPP_INCLUDED
+#pragma once
 
 #include <string>
 #include "actor_id.hpp"
@@ -17,5 +16,3 @@ class Actor {
     private:
         ActorID getNewID();
 };
-
-#endif // ACTOR_HPP_INCLUDED
