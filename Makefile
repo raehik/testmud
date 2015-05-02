@@ -29,24 +29,9 @@ EXEC=testmud
 
 #${OBJECTS}:
 
-OBJECTS=main.o actor.o talker.o mover.o actor_id.o
+OBJECTS=main.o actor.o talker.o actor_id.o command_interface.o command_interpreter.o
 
 all: ${EXEC}
-
-talker.o: talker.cpp talker.hpp
-	${CC} ${CFLAGS} -c talker.cpp
-
-actor.o: actor.cpp actor.hpp
-	${CC} ${CFLAGS} -c actor.cpp
-
-main.o: main.cpp actor.hpp
-	${CC} ${CFLAGS} -c main.cpp
-
-mover.o: mover.cpp mover.hpp
-	${CC} ${CFLAGS} -c mover.cpp
-
-actor_id.o: actor_id.cpp actor_id.hpp
-	${CC} ${CFLAGS} -c actor_id.cpp
 
 ${EXEC}: ${OBJECTS}
 	${CC} ${CFLAGS} ${OBJECTS} -o ${EXEC} ${LFLAGS}
@@ -54,3 +39,21 @@ ${EXEC}: ${OBJECTS}
 .PHONY: clean
 clean:
 	rm -f ${OBJECTS} ${EXEC}
+
+main.o: main.cpp actor.hpp
+	${CC} ${CFLAGS} -c main.cpp
+
+actor.o: actor.cpp actor.hpp
+	${CC} ${CFLAGS} -c actor.cpp
+
+talker.o: talker.cpp talker.hpp
+	${CC} ${CFLAGS} -c talker.cpp
+
+actor_id.o: actor_id.cpp actor_id.hpp
+	${CC} ${CFLAGS} -c actor_id.cpp
+
+command_interface.o: command_interface.cpp command_interface.hpp
+	${CC} ${CFLAGS} -c command_interface.cpp
+
+command_interpreter.o: command_interpreter.cpp command_interpreter.hpp
+	${CC} ${CFLAGS} -c command_interpreter.cpp
