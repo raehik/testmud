@@ -2,8 +2,16 @@ Architecture design
 ===================
 
 This is the architecture document for the TestMUD game. In this I will
-endeavour to document all my thoughts & plans for the game's internal
-structure.
+endeavour to document all my thoughts & plans for the game's classes and
+internal structure.
+
+
+Things to remember
+------------------
+
+  * This is a **MUD**; not a **roguelike**
+      * That means a command-based interface, not a key-based one.
+      * It also means no text displays e.g. maps.
 
 
 Ideas
@@ -69,6 +77,14 @@ Classes which can be used as 'mixins' are '*-er*'s.
 
 Classes
 -------
+
+  * CommandInterface
+
+Sets up an interface for the player to send commands through.
+
+  * CommandInterpreter
+
+What else? Interprets player commands.
 
   * Position
 
