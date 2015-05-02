@@ -2,6 +2,9 @@
 #include <sstream>
 
 #include "talker.hpp"
+#include "command_interface.hpp"
+
+/*
 
 int main() {
     Talker actor("ayy");
@@ -12,12 +15,10 @@ int main() {
     return 0;
 }
 
-/*
+*/
 
 int main() {
     CommandInterface cmd;
-    cmd.begin()
+    cmd.begin();
     return 0;
 }
-
-*/
