@@ -3,7 +3,6 @@
 #include "command_interpreter.hpp"
 
 CommandInterpreter::CommandInterpreter() {
-    std::cout << "new CommandInterpreter instantiated" << std::endl;
 }
 
 void CommandInterpreter::interpret(std::string cmd) {
