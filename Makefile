@@ -29,7 +29,7 @@ EXEC=testmud
 
 #${OBJECTS}:
 
-OBJECTS=main.o actor.o talker.o actor_id.o command_interface.o command_interpreter.o
+OBJECTS=main.o actor.o talker.o actor_id.o cmd_interface.o cmd_interpreter.o
 
 all: ${EXEC}
 
@@ -52,8 +52,8 @@ talker.o: talker.cpp talker.hpp
 actor_id.o: actor_id.cpp actor_id.hpp
 	${CC} ${CFLAGS} -c actor_id.cpp
 
-command_interface.o: command_interface.cpp command_interface.hpp
-	${CC} ${CFLAGS} -c command_interface.cpp
+cmd_interface.o: cmd_interface.cpp cmd_interface.hpp
+	${CC} ${CFLAGS} -c cmd_interface.cpp
 
-command_interpreter.o: command_interpreter.cpp command_interpreter.hpp
-	${CC} ${CFLAGS} -c command_interpreter.cpp
+cmd_interpreter.o: cmd_interpreter.cpp cmd_interpreter.hpp
+	${CC} ${CFLAGS} -c cmd_interpreter.cpp

@@ -3,9 +3,9 @@
 #include <string>
 #include <vector>
 
-class CommandInterpreter {
+class CmdInterpreter {
     public:
-        CommandInterpreter();
+        CmdInterpreter();
         void interpret(std::string cmd);
 
     private:
