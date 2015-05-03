@@ -86,6 +86,11 @@ Sets up an interface for the player to send commands through.
 
 What else? Interprets player commands.
 
+  * Command
+
+A container for telling the CommandInterpreter (or something else?) what
+to do.
+
   * Position
 
 Stores an AreaID along with x-, y- and z-coordinates.
