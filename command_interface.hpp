@@ -1,15 +1,15 @@
 #pragma once
 
-#include "cmd_interpreter.hpp"
+#include "command_interpreter.hpp"
 
-class CmdInterface {
+class CommandInterface {
     public:
-        CmdInterface();
+        CommandInterface();
         void begin();
         void prompt();
 
     private:
-        CmdInterpreter _cmd_interpreter;
+        CommandInterpreter _cmd_interpreter;
         std::string _input_cmd;
         std::string _prompt_str;
 };

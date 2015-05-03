@@ -2,7 +2,7 @@
 #include <sstream>
 
 #include "talker.hpp"
-#include "cmd_interface.hpp"
+#include "command_interface.hpp"
 
 /*
 
@@ -18,7 +18,7 @@ int main() {
 */
 
 int main() {
-    CmdInterface cmd;
+    CommandInterface cmd;
     cmd.begin();
     return 0;
 }
