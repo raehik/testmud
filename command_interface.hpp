@@ -11,4 +11,5 @@ class CommandInterface {
     private:
         CommandInterpreter _cmd_interpreter;
         std::string _input_cmd;
+        std::string _prompt_str;
 };
