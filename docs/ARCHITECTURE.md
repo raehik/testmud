@@ -84,7 +84,12 @@ Sets up an interface for the player to send commands through.
 
   * CommandInterpreter
 
-What else? Interprets player commands.
+Parses an input phrase/sentence as a command.
+
+  * Dictionary
+
+Parses a command to check whether it is grammatically correct and
+find the verb, object & any other information.
 
   * Command
 
